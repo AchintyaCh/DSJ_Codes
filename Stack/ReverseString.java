@@ -23,7 +23,6 @@ class Operations{
         else{
             top=top+1;
             mystack[top]=String.valueOf(data);
-            System.out.println("Pushed" + mystack[top]);
         }
     }
     String pop(){
@@ -34,7 +33,6 @@ class Operations{
         else{
             String ele=mystack[top];
             top=top-1;
-            System.out.println("Popped" + ele);
             return ele;
         }
     }
