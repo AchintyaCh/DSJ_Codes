@@ -1,3 +1,4 @@
+//This code is to reverse string using Stack operations
 import java.util.Scanner;
 class ReverseString {
     public static void main(String[] args) {
@@ -5,6 +6,7 @@ class ReverseString {
         Scanner sc=new Scanner(System.in);
         System.out.println("Enter Your Name: ");
         String inputString=sc.nextLine();
+        //Reading the String char-by-char
         for(int i=0;i<inputString.length();i++){
             op.push(inputString.charAt(i));
         }
@@ -16,6 +18,7 @@ class Operations{
     int top=-1;
     String []mystack=new String[100];
     int size=mystack.length;
+    //Push operation
     void push(char data){
         if(top==size-1){
             System.out.println("Stack is Full");
@@ -37,6 +40,7 @@ class Operations{
         }
     }
     String display(){
+        //This method will collect and concatenate all the characters into one String
         String s="";
         if(top==-1){
             System.out.println("No input entered");
